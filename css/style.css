@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'padrao';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100%;
+    background-color:rgb(166, 229, 231) ;
+    font-family: 'padrao';
+    color: teal;
+    letter-spacing: 5px;
+}
+
+#logo {
+    margin: 150px auto;
+    width: 100px;
+}
+
+#container {
+    max-width: 900px;
+    min-width: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px auto ;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input {
+    background-color:rgb(206, 225, 226);
+    border: none;
+    outline: none;
+    font-size: 26px;
+    color: rgb(11, 73, 73);
+    font-weight: 900;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.partes-menu{
+    margin: 20px;
+}
+
+#bill {
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position-x: 10px ;
+    background-size: 14px;
+}
+
+
+
+#people {
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y:center ;
+    background-size: 14px;
+}
+
+.tip {
+    width: 120px;
+    height: 50px;
+    background-color: teal;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 24px; 
+    font-family: 'padrao';
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+#custom {
+    background-color: rgb(240, 236, 236);
+    color: teal;
+}
+
+#info , #menu{
+    width: 428px;
+    
+}
+
+#info {
+    background-color: teal;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 432px;
+
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 40px 0px;
+}
+
+.info-content input {
+    width: 66%;
+    background-color: teal;
+    color: turquoise;
+}
+
+#info label {
+    color: white;
+}
+
+#reset {
+    margin-top: 10px;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    background-color: turquoise;
+    font: 'padrao';
+    font-size: 20px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.attribution {
+    margin: 50px;
+}
+
+.partes-menu button:hover{
+    background-color: rgb(4, 51, 51);
+    transition: 500ms;
+}
+
+#custom:hover {
+    background-color: rgb(48, 47, 47);
+    color: white;
+    transition: 500ms;
+}

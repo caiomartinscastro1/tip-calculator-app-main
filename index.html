@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--Favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--Meu css-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tip calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <h1 id="logo"><!-- Inicio Logo-->
+    <img src="images/logo.svg" alt="Logo"><!--imagem da Logo-->
+  </h1><!--Fim Logo-->
+  
+  
+
+  <div id="container"><!--Comeco Container-->
+
+    <div id="menu"><!--Comeco Menu-->
+
+      <div class="partes-menu"><!--Inicio parte Menu-->
+
+        <label for="bill">Bill</label>
+        <br>
+        <input type="number" name="bill" id="bill" min="0">
+
+      </div><!--Fim parte menu-->
+
+      <div class="partes-menu"><!--Inicio parte Menu-->
+
+        <label for="tip">Select Tip %</label>
+        <br>
+        <table>
+          <tr>
+            <td><button type="radio" name="tip" id="tip" class="tip" onclick="gorjeta(5)">5%</button></td>
+            <td><button type="radio" name="tip" id="tip" class="tip" onclick="gorjeta(10)">10%</button></td>
+            <td><button type="radio" name="tip" id="tip" class="tip" onclick="gorjeta(15)">15%</button></td>
+          </tr>
+
+          <tr>
+            <td><button type="radio" name="tip" id="tip" class="tip" onclick="gorjeta(25)">25%</button></td>
+            <td><button type="radio" name="tip" id="tip" class="tip" onclick="gorjeta(50)">50%</button></td>
+            <td><button type="radio" name="tip" id="custom" class="tip" onclick="custom()">Custom</button></td>
+          </tr>
+        </table>
+
+      </div><!--Fim parte menu-->
+      <div class="partes-menu"><!--Inicio parte Menu-->
+
+        <label for="people">Number of people</label>
+        <br>
+        <input type="number" name="people" id="people" min="0">
+      </div><!--Fim parte menu-->
+
+    </div><!--Fim menu-->
+
+    <div id="info"><!--Inicio Info-->
+      <div class="info-content"><!--Inicio info content-->
+        <label for="info-content">Tip Amount</label>
+        <input type="text" name="info-content" id="info-content" disabled="disabled">
+      </div><!--Fim inicio content-->
+
+      <div class="info-content"><!--Inicio info content-->
+        <label for="total">Total</label>
+        <input type="text" name="total" id="total" disabled="disabled">
+      </div><!--Fim inicio content-->
+
+      <button id="reset" onclick="reset()">RESET</button>
+    </div><!--Fim info-->
+    
+    
+
+  </div><!--Fim Container-->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Caio Martins Castro</a>.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
